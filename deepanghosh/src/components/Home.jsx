@@ -13,11 +13,13 @@ import {
     IconProps,
     useColorModeValue,
   } from '@chakra-ui/react';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import MyImage from '../images/Main.JPG';
   
   export default function Home() {
     return (
-      <Container id="home" maxW={'100%'} backgroundColor={'#13005A'} pt="50" height={'container.lg'} textAlign={{base:'center',md:'left'}}>
+      <Container id="home" maxW={'100%'} backgroundColor={'#13005A'} pt="50" height={{lg:'container.md','2xl':'container.lg'}} textAlign={{base:'center',md:'left'}}>
         <Stack
           align={'center'}
           spacing={{ base: 8}}
@@ -32,7 +34,7 @@ import {
               lineHeight={1.1}
               fontWeight={600}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
-              {/* <Text
+              <Text
                 as={'span'}
                 position={'relative'}
                 _after={{
@@ -44,12 +46,13 @@ import {
                   left: 0,
                   bg: 'red.400',
                   zIndex: -1,
-                }}>
-
-              </Text> */}
+                }}
+                color={'#03C988'}>
+                  Hi, I am
+              </Text>
               <br />
-              <Text as={'span'} color={'#03C988'}>
-                Hi, I'm Deepan
+              <Text as={'span'} color={'white'} >
+                Deepan Ghosh
               </Text>
             </Heading>
             <Text color={'white'}>
@@ -64,7 +67,8 @@ import {
               justify={{base:'center',md:'left'}}
               >
               <Button
-                rounded={'full'}
+                border={'1px'}
+                borderColor="white"
                 size={'lg'}
                 fontWeight={'normal'}
                 px={6}
@@ -72,8 +76,9 @@ import {
                 bg={'#03C988'}
                 _hover={{ bg: 'white',color:'black' }}>
                     Resume
+                    <FontAwesomeIcon icon={faDownload}/>
               </Button>
-              <Button
+              {/* <Button
                 rounded={'full'}
                 size={'lg'}
                 fontWeight={'normal'}
@@ -82,10 +87,9 @@ import {
                     bg:'#03C988',
                     color:'white'
                 }}
-                // leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}
                 >
-                About Me
-              </Button>
+                About
+              </Button> */}
             </Stack>
           </Stack>
           <Flex

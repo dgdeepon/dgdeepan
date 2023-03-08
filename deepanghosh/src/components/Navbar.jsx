@@ -21,6 +21,8 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
   
   
   export default function Navbar() {
@@ -75,7 +77,7 @@ import {
             spacing={6}>
             <Button
               as={'a'}
-              display={{ base: 'none', md: 'inline-flex' }}
+              display={{ base: 'none', lg: 'inline-flex' }}
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
@@ -85,7 +87,8 @@ import {
                 bg: 'white',
                 color:'black'
               }}>
-              Resume
+              Resume 
+              <FontAwesomeIcon icon={faDownload}/>
             </Button>
           </Stack>
         </Flex>
@@ -109,7 +112,7 @@ import {
             <Popover trigger={'hover'} placement={'bottom-start'}>
               <PopoverTrigger>
                 <Link
-                  p={2}
+                  p={5}
                   href={navItem.href ?? '#'}
                   fontSize={'lg'}
                   fontWeight={550}
@@ -201,6 +204,7 @@ import {
       },
     {
       label: '<About/>',
+      href:'#about'
     },
     {
       label:'<Skills/>'
