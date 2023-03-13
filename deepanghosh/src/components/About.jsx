@@ -1,4 +1,4 @@
-import { Box, Container,Divider,Grid,HStack,Link,Spacer,Text, VStack,Image } from "@chakra-ui/react";
+import { Box, Container,Divider,Grid,Text,Image } from "@chakra-ui/react";
 
 
 

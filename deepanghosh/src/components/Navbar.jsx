@@ -207,7 +207,8 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
       href:'#about'
     },
     {
-      label:'<Skills/>'
+      label:'<Skills/>',
+      href:'#skills'
     },
     {
       label: '<Projects/>',

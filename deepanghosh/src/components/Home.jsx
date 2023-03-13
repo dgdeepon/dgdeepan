@@ -2,19 +2,13 @@ import {
     Container,
     Stack,
     Flex,
-    Box,
     Heading,
     Text,
     Button,
-    Image,
-    Icon,
-    IconButton,
-    createIcon,
-    IconProps,
-    useColorModeValue,
+    Image
   } from '@chakra-ui/react';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+  import { faDownload } from '@fortawesome/free-solid-svg-icons';
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   import MyImage from '../images/Main.JPG';
   
   export default function Home() {
